@@ -6,19 +6,19 @@
 			"value": "https://raw.githubusercontent.com/Microsoft/openshift-container-platform/master"
 		},
 		"masterVmSize": {
-			"value": "Standard_DS2_v2"
+			"value": "Standard_D4s_v3"
 		},
 		"infraVmSize": {
-			"value": "Standard_DS2_v2"
+			"value": "Standard_D2s_v3"
 		},
 		"nodeVmSize": {
-			"value": "Standard_DS2_v2"
+			"value": "Standard_D2s_v3"
 		},
 		"storageKind": {
-			"value": "changeme"
+			"value": "managed"
 		},
 		"openshiftClusterPrefix": {
-			"value": "changeme"
+			"value": "ocpcluster"
 		},
 		"masterInstanceCount": {
 			"value": 3
@@ -27,22 +27,22 @@
 			"value": 2
 		},
 		"nodeInstanceCount": {
-			"value": 1
+			"value": 2
 		},
 		"dataDiskSize": {
 			"value": 128
 		},
 		"adminUsername": {
-			"value": "changeme"
+			"value": "clusteradmin"
 		},
 		"openshiftPassword": {
 			"value": "changeme"
 		},
 		"enableMetrics": {
-			"value": "false"
+			"value": "true"
 		},
 		"enableLogging": {
-			"value": "false"
+			"value": "true"
 		},
 		"rhsmUsernameOrOrgId": {
 			"value": "changeme"

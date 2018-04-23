@@ -12,7 +12,7 @@
 		},
 		"masterVmSize": {
 			"type": "string",
-			"defaultValue": "Standard_DS2_v2",
+			"defaultValue": "Standard_D4s_v3",
 			"allowedValues": [
 				"Standard_A4", "Standard_A5", "Standard_A6", "Standard_A7", "Standard_A8", "Standard_A9", "Standard_A10", "Standard_A11",
 				"Standard_D2", "Standard_D3", "Standard_D4",
@@ -36,7 +36,7 @@
 		},
 		"infraVmSize": {
 			"type": "string",
-			"defaultValue": "Standard_DS2_v2",
+			"defaultValue": "Standard_D2s_v3",
 			"allowedValues": [
 				"Standard_A4", "Standard_A5", "Standard_A6", "Standard_A7", "Standard_A8", "Standard_A9", "Standard_A10", "Standard_A11",
 				"Standard_D2", "Standard_D3", "Standard_D4",
@@ -60,7 +60,7 @@
 		},
 		"nodeVmSize": {
 			"type": "string",
-			"defaultValue": "Standard_DS2_v2",
+			"defaultValue": "Standard_D2s_v3",
 			"allowedValues": [
 				"Standard_A4", "Standard_A5", "Standard_A6", "Standard_A7", "Standard_A8", "Standard_A9", "Standard_A10", "Standard_A11",
 				"Standard_D2", "Standard_D3", "Standard_D4",
@@ -92,7 +92,7 @@
 		},
 		"openshiftClusterPrefix": {
 			"type": "string",
-			"defaultValue": "mycluster",
+			"defaultValue": "openshift",
 			"minLength": 4,
 			"maxLength": 20,
 			"metadata": {
@@ -239,7 +239,7 @@
 		},
 		"defaultSubDomainType": {
 			"type": "string",
-			"defaultValue": "nipio",
+			"defaultValue": "nip.io",
 			"allowedValues": [
 				"nipio", "custom"
 			],
@@ -249,7 +249,7 @@
 		},
 		"defaultSubDomain": {
 			"type": "string",
-			"defaultValue": "contoso.com",
+			"defaultValue": "nip.io",
 			"metadata": {
 				"description": "Default Subdomain for application routing (Wildcard DNS) - must enter something even if you are using nip.io. Must be all lowercase"
 			}
@@ -384,7 +384,7 @@
 			"app": "OpenShiftContainerPlatform",
 			"provider": "9d2c71fc-96ba-4b4a-93b3-14def5bc96fc"
 		},
-		"bastionVmSize": "Standard_DS2_v2",
+		"bastionVmSize": "Standard_D2s_v3",
 		"singlequote": "'",
 		"sshKeyPath": "[concat('/home/', parameters('adminUsername'), '/.ssh/authorized_keys')]",
 		"bastionPrepScriptUrl": "[concat(parameters('_artifactsLocation'), '/scripts/bastionPrep.sh')]",
